@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/Bakery.png" height="80px"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="treats.html">Treats</a></li>
+                    <!-- <li><a href="">Hours & Locations</a></li> -->
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>B A K E R Y</h1>
+    </section>
+    <!-- blog page content -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/bakery.jpg" alt="">
+                <h2>Breads & Cakes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem maiores praesentium fuga repellendus molestias amet asperiores, quibusdam eligendi obcaecati voluptatum a illo numquam eaque aspernatur non dolorem vitae vero qui cumque eveniet voluptas reiciendis soluta.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quidem officiis tenetur adipisci, recusandae commodi culpa unde quos beatae, error labore? Quaerat consectetur excepturi aut sed dolorem dolorum explicabo possimus distinctio vitae quae vero aliquam modi magnam quasi exercitationem repudiandae assumenda nostrum ad, veritatis dolore non nulla esse, nam tenetur. Nesciunt labore soluta iure consequuntur animi unde dolorem officiis, eos dolores error natus alias optio fuga sequi impedit rerum eius necessitatibus voluptatum ipsam nemo fugit quibusdam dicta. Minus quia ipsa alias adipisci rerum esse corporis nihil dolorem iure ut eaque maxime hic optio molestias ullam in non pariatur, quaerat doloribus.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam totam rem minima provident repudiandae! Inventore earum similique consequatur accusantium eum consectetur voluptas incidunt, dolor totam, libero neque. Quo, dolores sint. Maiores praesentium rem unde libero repellendus sed cum architecto, voluptatum hic! Illum excepturi inventore natus!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores minima corporis consectetur laudantium, adipisci delectus numquam qui sit? Hic voluptates in assumenda obcaecati ad praesentium aliquid. Molestiae totam quam saepe sed eveniet.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form action="" class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="blog-right">
+                <h3>Categories</h3>
+            <div>
+                <span>Cakes</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Cookies</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Cupcakes & Muffins</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Croissants</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Cream Rolls</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Breads & Buns</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Brownie</span>
+                <span>20</span>
+            </div>
+            <div>
+                <span>Waffles</span>
+                <span>11</span>
+            </div>
+            <div>
+                <span>Doughnuts</span>
+                <span>30</span>
+            </div>
+            <div>
+                <span>Pies</span>
+                <span>13</span>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore exercitationem illum nihil possimus quasi ipsa, error, provident <br> delectus magnam voluptatibus, voluptates facere. Asperiores, quisquam in?</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Swastika</p>
+    </section>
+
+
+
+
+
+    <!-- Javascript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
